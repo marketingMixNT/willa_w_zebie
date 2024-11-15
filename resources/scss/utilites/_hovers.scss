@@ -1,0 +1,30 @@
+@mixin hover-link($color) {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        border-radius: 4px;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+        @apply #{$color};
+    }
+
+    &:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+}
+
+.hover-link {
+    @include hover-link(bg-primary-400);
+
+    &--white{
+        @include hover-link(bg-white);
+    }
+}
+

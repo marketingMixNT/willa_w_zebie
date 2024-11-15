@@ -1,0 +1,1 @@
+<h2 class="uppercase font-AktivGrotesk text-sm text-primary-400 tracking-widest">{{$slot}}</h2>

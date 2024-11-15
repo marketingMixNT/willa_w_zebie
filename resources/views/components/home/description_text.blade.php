@@ -1,0 +1,1 @@
+<p class="font-AktivGrotesk text-sm leading-8 tracking-wider">{{$slot}}</p>

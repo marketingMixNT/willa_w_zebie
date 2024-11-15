@@ -1,0 +1,16 @@
+@use "./utilites/fonts";
+@use "./utilites/hovers";
+@use "./utilites/animations";
+@use "./utilites/global";
+@use "./UI/button.scss";
+@use "./UI/hamburger.scss";
+@use "./gallery.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-bg {
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
